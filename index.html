@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+
+	body {
+	background-color: #379DE2;
+	}
+
+	h1 {
+	font-family: Trebuchet MS;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	}
+
+	p {
+	font-family: Trebuchet MS;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	//font-weight: bold;
+	}
+
+	</style>
+	<title>Hello World</title>
+	</head>
+	<body>
+		<h1>Home</h1>
+		<p>This is the home page!</p>
+		<button type="button" onclick="hifunc()">
+		Click me! </button>
+
+	<p id="msg"></p>
+	<script> 
+		function hifunc()
+		{
+			document.getElementById("msg").innerHTML = "Hello There";
+		}
+	</script>
+	<button type="button" onclick="goodbyefunc()">
+		Don't click me! </button>
+	<script> 
+		function goodbyefunc()
+		{
+			document.write("why did you press that?");
+			window.alert("AHHHHHHHH");
+		}
+	</script>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+
+	body {
+	background-color: white
+	}
+
+	h1 {
+	font-family: Trebuchet MS;
+	font-size: 30px;
+	color: black
+	text-align: center;
+	}
+
+	p {
+	font-family: Trebuchet MS;
+	font-size: 20px;
+	color: black
+	text-align: center;
+	//font-weight: bold;
+	}
+
+	</style>
+	<title>Welcome to data entry!</title>
+	</head>
+	<body>
+		<h1>Home</h1>
+		<p>Please enter your name: </p>
+		<form>
+		
+		First name:<br>
+		<input type="text" name ="firstname"><br>
+		Last name:<br>
+		<input type="text" name ="lastname"><br>
+		</form>
+		<p id="msg"></p>
+		<button type="button" onclick="hifunc()">
+		Click me! </button>
+		<script> 
+			function hifunc()
+			{
+				document.getElementById("msg").innerHTML = "Hello There";
+			}		
+	</script>
+	</body>
+</html>
